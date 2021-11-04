@@ -11,8 +11,13 @@ function init() {
 
 	scene = new THREE.Scene();
 
+	const light = new THREE.DirectionalLight( 0xffffff, 1, 100 );
+	light.position.set( 0, 1, 0 ); //default; light shining from top
+	light.castShadow = true; // default false
+	scene.add( light );
+
 	geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
-	material = new THREE.MeshNormalMaterial();
+	material = new THREE.MeshLambertMaterial();
 
 	mesh = new THREE.Mesh( geometry, material );
 	scene.add( mesh );

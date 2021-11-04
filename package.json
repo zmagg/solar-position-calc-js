@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "three": "^0.134.0",
     "yargs": "^17.2.1"
   },
   "devDependencies": {

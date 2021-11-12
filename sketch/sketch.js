@@ -27,7 +27,7 @@ function setup() {
   var backgroundColor = lerpColor(color(r, g, b), color(256, 256, 256), 0.75);
   background(backgroundColor);
 
-  createLoop({ duration: 10, gif: { fileName: "sunoops2.gif" } });
+  // createLoop({ duration: 10, gif: { fileName: "sunoops2.gif" } });
 }
 
 function draw() {
